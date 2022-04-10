@@ -1,0 +1,73 @@
+/* Grotesk Book 18 */
+@font-face {
+  font-family: "Sharp-Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts//static/fonts/SharpGroteskBook18.woff2")
+      format("woff2"),
+    url("/static/fonts/SharpGroteskBook18.woff") format("woff");
+}
+/* Grotesk Book Italic 18 */
+@font-face {
+  font-family: "Sharp-Grotesk";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/SharpGroteskBookItalic18.woff2") format("woff2"),
+    url("/static/fonts/SharpGroteskBookItalic18.woff") format("woff");
+}
+/* Grotesk Bold 12 */
+@font-face {
+  font-family: "Sharp-Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/static/fonts/SharpGroteskSmBold12.woff2") format("woff2"),
+    url("/static/fonts/SharpGroteskSmBold12.woff") format("woff");
+}
+/* Grotesk Bold 20 */
+@font-face {
+  font-family: "Sharp-Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/static/fonts/SharpGroteskSmBold20.woff2") format("woff2"),
+    url("/static/fonts/SharpGroteskSmBold20.woff") format("woff");
+}
+/* Grotesk Bold 25 */
+@font-face {
+  font-family: "Sharp-Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/static/fonts/SharpGroteskSmBold25.woff2") format("woff2"),
+    url("/static/fonts/SharpGroteskSmBold25.woff") format("woff");
+}
+/* Grotesk Bold Italic 12 */
+@font-face {
+  font-family: "Sharp-Grotesk";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/static/fonts/SharpGroteskSmBoldItalic12.woff2") format("woff2"),
+    url("/static/fonts/SharpGroteskSmBoldItalic12.woff") format("woff");
+}
+/* Grotesk Bold Italic 20 */
+@font-face {
+  font-family: "Sharp-Grotesk";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/static/fonts/SharpGroteskSmBoldItalic20.woff2") format("woff2"),
+    url("/static/fonts/SharpGroteskSmBoldItalic20.woff") format("woff");
+}
+/* Grotesk Bold Italic 25 */
+@font-face {
+  font-family: "Sharp-Grotesk";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/static/fonts/SharpGroteskSmBoldItalic25.woff2") format("woff2"),
+    url("/static/fonts/SharpGroteskSmBoldItalic25.woff") format("woff");
+}
