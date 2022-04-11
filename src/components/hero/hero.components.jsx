@@ -11,16 +11,25 @@ import {
   GridItem,
 } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
+import Lottie from "lottie-react";
+import confetti from "../../images/confetti.json";
 
 import CurtisProfile from "../../images/curtis-cartier-profile.png";
 import UsedTools from "./used-tools.components";
+import { useRef } from "react";
 
 const Hero = () => {
+  const confettiRef = useRef();
+
   const handleClick = (event) => {
     event.preventDefault();
     document
       .getElementById("Contact")
       .scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleConfetti = (event) => {
+    confettiRef.current.goToAndPlay(0, false);
   };
 
   return (
@@ -68,6 +77,7 @@ const Hero = () => {
               color="black"
               borderRadius="0"
               letterSpacing=".7px"
+              onClick={handleConfetti}
               mr={4}
               mb={{ base: "4", sm: "0" }}
               _hover={{
@@ -104,7 +114,7 @@ const Hero = () => {
           </Flex>
           <UsedTools />
         </GridItem>
-        <GridItem zIndex="3" gridRow="1">
+        <GridItem zIndex="3" gridRow="1" position="relative">
           <Image
             boxSize={{ base: "80%", sm: "500px" }}
             src={CurtisProfile}
@@ -112,6 +122,14 @@ const Hero = () => {
             fit="scale-down"
             m="auto"
           />
+          <Box position="absolute" top="-25%" left="-25%" zIndex="-1" w="150%">
+            <Lottie
+              lottieRef={confettiRef}
+              animationData={confetti}
+              autoplay={false}
+              loop={false}
+            />
+          </Box>
         </GridItem>
       </Grid>
     </Container>

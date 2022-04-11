@@ -59,7 +59,7 @@ const Education = () => {
           background="whiteAlpha.700"
         >
           <Heading as="h3" size="xl">
-            Accosciates in Arts & Science
+            Associates in Arts & Science
           </Heading>
           <Text as="i" fontWeight="700">
             Whatcom Community College
