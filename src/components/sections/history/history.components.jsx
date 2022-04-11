@@ -37,7 +37,7 @@ const History = () => {
             goal is to create an unrivaled merchandise experience to enable
             their clients to focus on what they do best. That includes focusing
             on unique designs, quality blanks and custom fabrics, as well as
-            warehousing and distributing clients garments.
+            warehousing and distributing their client’s garments.
           </Text>
           <Heading as="h4" size="md" mt={4}>
             Responsibilities
@@ -59,16 +59,22 @@ const History = () => {
             <ListItem>
               Work with CEO and team members on department and company growth
             </ListItem>
+            <ListItem>Vetted and deployed enterprise grade software</ListItem>
+            <ListItem>
+              Built out a photo studio and managed the pipeline of product
+              photography
+            </ListItem>
           </UnorderedList>
           <Heading as="h4" size="md" mt={4}>
             My Role
           </Heading>
           <Text pl={4}>
-            Managing a small team, I worked with Brist's enterprise clients to
-            solve logistic merchandise fulfillment opportunities. Each clients
-            requirements vary as their goals for merchandise sales and
-            distribution were typically very different. My goal was to create
-            easy to replicate systems that would adapt easily to each client.
+            While managing a small team, I worked with Brist's enterprise
+            clients to solve logistic merchandise fulfillment opportunities.
+            Each clients requirements vary as their goals for merchandise sales
+            and distribution were typically very different. My goal was to
+            create easy to replicate systems that would adapt easily to each
+            client.
           </Text>
         </GridItem>
         <GridItem
@@ -101,10 +107,11 @@ const History = () => {
               asked for by clients
             </ListItem>
             <ListItem>
-              Work with team to build out business plans and launch out service
+              Work with the team to build out business plans and launch our
+              service
             </ListItem>
             <ListItem>
-              Brainstorm regular marketing campaigns that increase client's
+              Brainstorm regular marketing campaigns that increase our client's
               sales
             </ListItem>
             <ListItem>Build out preferred internal tech stacks</ListItem>
@@ -115,7 +122,7 @@ const History = () => {
           <Text pl={4}>
             At the beginning of the pandemic, three of us decided to merge our
             businesses together and increase the scope of what we could offer to
-            our clients.
+            our existing client base.
           </Text>
         </GridItem>
       </Grid>
