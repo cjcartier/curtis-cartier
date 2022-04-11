@@ -13,8 +13,8 @@ const Nav = () => {
       pt={8}
       display={{ base: "none", lg: "flex" }}
     >
-      {navItems.map((item) => (
-        <NavItem item={item} />
+      {navItems.map((item, i) => (
+        <NavItem key={i} item={item} />
       ))}
     </Flex>
   );

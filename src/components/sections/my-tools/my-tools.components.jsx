@@ -27,8 +27,8 @@ const MyTools = () => {
           alignItems="center"
           justifyItems="center"
         >
-          {tools.map((tool) => (
-            <GridItem fontSize={40}>
+          {tools.map((tool, i) => (
+            <GridItem key={i} fontSize={40}>
               <Tooltip label={tool.name}>
                 <Icon icon={tool.slug} />
               </Tooltip>

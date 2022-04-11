@@ -23,8 +23,8 @@ const MobileNav = () => {
           colorScheme="yellow"
         ></MenuButton>
         <MenuList zIndex="5">
-          {navItems.map((item) => (
-            <NavItem item={item} isMobile={true} />
+          {navItems.map((item, i) => (
+            <NavItem key={i} item={item} isMobile={true} />
           ))}
         </MenuList>
       </Menu>

@@ -36,8 +36,8 @@ const Clients = () => {
         alignItems="center"
         px={8}
       >
-        {logos.map((Logo) => (
-          <GridItem colSpan={1} fill="blackAlpha.800">
+        {logos.map((Logo, i) => (
+          <GridItem key={i} colSpan={1} fill="blackAlpha.800">
             <Logo />
           </GridItem>
         ))}

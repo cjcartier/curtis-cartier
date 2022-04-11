@@ -23,8 +23,8 @@ const UsedTools = () => {
       <Text fontWeight="700" fontSize="xs" marginRight={4}>
         Site Built With:
       </Text>
-      {tools.map((tool) => (
-        <Tooltip label={tool.name}>
+      {tools.map((tool, i) => (
+        <Tooltip key={i} label={tool.name}>
           <Icon icon={`simple-icons:${tool.url}`} />
         </Tooltip>
       ))}
