@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import {
   Box,
   Container,
@@ -16,6 +16,13 @@ import CurtisProfile from "../../images/curtis-cartier-profile.png";
 import UsedTools from "./used-tools.components";
 
 const Hero = () => {
+  const handleClick = (event) => {
+    event.preventDefault();
+    document
+      .getElementById("Contact")
+      .scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <Container maxW="container.xl" padding="12" position="relative">
       <Box
@@ -31,11 +38,12 @@ const Hero = () => {
         }}
       />
       <Grid
-        templateColumns="repeat(auto-fill, minmax(500px ,1fr))"
+        templateColumns="repeat(auto-fill, minmax(max(200px,45vw), 1fr))"
         alignItems="center"
         justifyItems="center"
+        rowGap={8}
       >
-        <GridItem maxW="700px" gridRow={{ sm: "2", lg: "1" }} zIndex="3">
+        <GridItem maxW="650px" gridRow={{ sm: "2", lg: "1" }} zIndex="3">
           <Flex direction="row" alignItems="flex-end">
             <Box as="span" color="yellow.400" marginRight={4} fontSize="5xl">
               <Icon icon="ic:twotone-waving-hand" />
@@ -50,7 +58,7 @@ const Hero = () => {
             apps. Some might use this space to inject keywords like UI/UX,
             Frontend, Engineer, and Developer
           </Text>
-          <Flex direction="row">
+          <Flex direction="row" flexWrap="wrap">
             <Button
               fontWeight="700"
               fontSize="xs"
@@ -61,6 +69,7 @@ const Hero = () => {
               borderRadius="0"
               letterSpacing=".7px"
               mr={4}
+              mb={{ base: "4", sm: "0" }}
               _hover={{
                 bg: "purple.600",
                 color: "white",
@@ -82,6 +91,7 @@ const Hero = () => {
               borderWidth="2px"
               letterSpacing=".7px"
               variant="outline"
+              onClick={handleClick}
               _hover={{
                 bg: "purple.600",
                 color: "white",
@@ -96,10 +106,11 @@ const Hero = () => {
         </GridItem>
         <GridItem zIndex="3" gridRow="1">
           <Image
-            boxSize="500px"
+            boxSize={{ base: "80%", sm: "500px" }}
             src={CurtisProfile}
             alt="Curtis Cartier Profile Image"
             fit="scale-down"
+            m="auto"
           />
         </GridItem>
       </Grid>

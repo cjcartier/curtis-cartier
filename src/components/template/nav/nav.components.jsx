@@ -11,7 +11,7 @@ const Nav = () => {
       direction="row"
       justifyContent="flex-end"
       pt={8}
-      display={{ sm: "none", lg: "flex" }}
+      display={{ base: "none", lg: "flex" }}
     >
       {navItems.map((item) => (
         <NavItem item={item} />

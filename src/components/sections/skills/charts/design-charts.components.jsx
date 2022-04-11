@@ -15,7 +15,6 @@ const DevCharts = () => {
     labels: [
       "Illustrator",
       "Photoshop",
-
       "Figma & Xd",
       "Creative Direction",
       "Photography",
@@ -40,9 +39,6 @@ const DevCharts = () => {
       options={{
         color: "#000000",
         borderColor: "rgba(0,0,0,.5)",
-        scales: {
-          max: "10",
-        },
       }}
       data={data}
     />

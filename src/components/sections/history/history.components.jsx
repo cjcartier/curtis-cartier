@@ -14,7 +14,10 @@ const History = () => {
   return (
     <Container maxW="container.xl" padding="12">
       <SectionHeading heading="History" sub="Brief & Relevant Work History" />
-      <Grid templateColumns="repeat(auto-fill, minmax(450px,1fr))" gridGap={8}>
+      <Grid
+        templateColumns="repeat(auto-fill, minmax(max(300px, 48%), 1fr))"
+        gridGap={8}
+      >
         <GridItem
           p={8}
           borderWidth="4px"

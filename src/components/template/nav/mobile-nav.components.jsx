@@ -12,7 +12,7 @@ const MobileNav = () => {
       direction="row"
       justifyContent="flex-end"
       pt={8}
-      display={{ sm: "flex", lg: "none" }}
+      display={{ base: "flex", lg: "none" }}
       mb="-12"
     >
       <Menu isLazy>

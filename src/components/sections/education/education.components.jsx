@@ -10,7 +10,7 @@ const Education = () => {
         sub="Relevant & Not-So Relevant Education"
       />
       <Grid
-        templateColumns="repeat(auto-fill, minmax(450px, 1fr))"
+        templateColumns="repeat(auto-fill, minmax(max(300px, 48%), 1fr))"
         columnGap={8}
         rowGap={8}
       >

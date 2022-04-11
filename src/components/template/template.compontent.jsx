@@ -5,7 +5,7 @@ import Nav from "./nav/nav.components";
 
 const Template = ({ children }) => {
   return (
-    <Box maxW="full" bg="red.400" color="black" overflow="clip">
+    <Box maxW="full" bg="red.400" color="black" overflow="hidden">
       <Container
         maxW="container.xl"
         px={12}

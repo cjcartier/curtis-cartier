@@ -16,9 +16,15 @@ const Skills = () => {
   return (
     <Container maxW="container.xl" padding="12">
       <SectionHeading heading="Skillz" sub="What Am I Good at?" />
-      <Box px={8}>
+      <Box
+        px={{ base: "0", sm: "8" }}
+        w={{ base: "98vw", sm: "100%" }}
+        position="relative"
+        left={{ base: "-40px", sm: "0" }}
+        m="auto"
+      >
         <Grid
-          templateColumns="repeat(auto-fill, minmax(450px, 1fr))"
+          templateColumns="repeat(auto-fill, minmax(max(300px, 50%), 1fr))"
           rowGap={12}
         >
           <GridItem>
