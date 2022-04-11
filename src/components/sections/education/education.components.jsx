@@ -24,8 +24,10 @@ const Education = () => {
           <Heading as="h3" size="xl">
             Web Programming & Development Courses
           </Heading>
-          <Text>That One thing I can rememeber</Text>
-          <Text>
+          <Text as="i" fontWeight="700">
+            Zero To Mastery Academy
+          </Text>
+          <Text mt={4}>
             Structured courses for SQL/Databases, ES6+ JS, React/Frameworks,
             State Management, and more.
           </Text>
@@ -40,13 +42,13 @@ const Education = () => {
           <Heading as="h3" size="xl">
             Continued Learning
           </Heading>
-          <Text>
+          <Text as="i" fontWeight="700">
             School of Reading 1000 Articles and Arbitrary Testing
             {" (unaccredited)"}
           </Text>
-          <Text>
-            Structured courses for SQL/Databases, ES6+ JS, React/Frameworks,
-            State Management, and more.
+          <Text mt={4}>
+            Regularly reading articles and spinning up new testing environments
+            to better my understanding of web development
           </Text>
         </GridItem>
         <GridItem
@@ -59,8 +61,10 @@ const Education = () => {
           <Heading as="h3" size="xl">
             Accosciates in Arts & Science
           </Heading>
-          <Text>Whatcom Community College</Text>
-          <Text>
+          <Text as="i" fontWeight="700">
+            Whatcom Community College
+          </Text>
+          <Text mt={4}>
             Only applies to show that I have a little bit of smarts but not a
             full bachelor smarts
           </Text>

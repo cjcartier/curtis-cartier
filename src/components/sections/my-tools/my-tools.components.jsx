@@ -22,7 +22,7 @@ const MyTools = () => {
       />
       <Box px={8}>
         <Grid
-          templateColumns="repeat(auto-fill, minmax( 100px,1fr))"
+          templateColumns="repeat(auto-fill, minmax( max(50px, 100px),1fr))"
           gridGap={8}
           alignItems="center"
           justifyItems="center"
@@ -36,7 +36,7 @@ const MyTools = () => {
           ))}
           <GridItem colSpan={2}>
             <Flex direction="row" alignItems="center">
-              <Text>+ More I Didn't Find Icon For</Text>
+              <Text>+ More I Didn't Find Icons For</Text>
             </Flex>
           </GridItem>
         </Grid>

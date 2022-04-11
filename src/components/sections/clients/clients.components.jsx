@@ -37,11 +37,7 @@ const Clients = () => {
         px={8}
       >
         {logos.map((Logo) => (
-          <GridItem
-            colSpan={1}
-            fill="blackAlpha.800"
-            _hover={{ fill: "purple.800" }}
-          >
+          <GridItem colSpan={1} fill="blackAlpha.800">
             <Logo />
           </GridItem>
         ))}

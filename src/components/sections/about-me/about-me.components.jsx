@@ -1,4 +1,4 @@
-import { Container, Flex, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Text } from "@chakra-ui/react";
 import * as React from "react";
 import SectionHeading from "../../section-heading/section-heading.compontent";
 
@@ -6,8 +6,8 @@ const AboutMe = () => {
   return (
     <Container maxW="container.xl" padding="12">
       <Flex direction="column">
-        <SectionHeading heading="Whomst" sub="A quick snack" />
-        <Text
+        <SectionHeading heading="Whomst" sub="A Quick Snack About Me" />
+        <Box
           p={8}
           borderWidth="4px"
           borderColor="blackAlpha.800"
@@ -15,21 +15,33 @@ const AboutMe = () => {
           background="whiteAlpha.700"
           zIndex="3"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis
-          dictum placerat. Aenean posuere eu sem a interdum. In egestas molestie
-          augue, et porttitor diam aliquam vel. Ut et consectetur mi. Aliquam
-          eget gravida nibh. Nunc rutrum augue volutpat mollis vestibulum. Nam
-          pellentesque sed ipsum congue egestas. Proin tellus nisi, rutrum id
-          blandit vitae, bibendum eget dolor. Praesent nunc urna, sagittis non
-          semper eget, bibendum vitae dolor. Vestibulum et magna sem. Etiam
-          congue condimentum metus, eu cursus eros facilisis ac. Vestibulum
-          aliquam sodales neque, commodo dignissim nibh sodales quis. Sed
-          venenatis pellentesque libero, id egestas mi finibus vel. Phasellus et
-          feugiat ex. Quisque eu mi malesuada, semper metus eu, rutrum magna.
-          Sed bibendum tincidunt leo quis tempor. Sed porta quam eget eros
-          hendrerit, vitae tincidunt elit placerat. Quisque eros velit, dapibus
-          eu lectus non, dictum laoreet metus.
-        </Text>
+          <Text mb={4}>
+            Hi! Thanks for scrolling down just a little. My name is Curtis (just
+            in case you missed the big black letters above). I am an overly
+            obsessive Frontend Engineer. I am mostly a self-taught web engineer
+            with 10 years experience building sites for myself and clients. Over
+            the years I have evolved where I spend my time learning and what my
+            preferred stack looks like. Originally began building templated
+            sites with Wordpress before finding the world of site builders. From
+            there I dove into configuring plugins and enhancing my understanding
+            of PHP and APIs. And now I am almost completely focused on building
+            sites Jamstack.
+          </Text>
+          <Text mb={4}>
+            One of my favorite things to do is solve problems, something that
+            originally gravitated me towards coding and software development.
+            The more complexity, the better. Talking with clients or team
+            members about strategic and logistic company needs and breaking them
+            down into ways that software can automate or enhance workflows
+            excites me. And then developing user friendly, responsive front ends
+            to streamlining usability adds to it.
+          </Text>
+          <Text>
+            At this time, I am looking at pursuing working with an existing
+            agency that is looking for an engineer keen on growing themselves as
+            well as accelerating the growth of the company.
+          </Text>
+        </Box>
       </Flex>
     </Container>
   );
